@@ -1,0 +1,32 @@
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.dialog-wrapper{
+    display: table;
+    position: absolute;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.dialog-wrapper > div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.dialog-content{
+    background: #fff;
+    /*trick: */
+    border: 1px solid transparent;
+	margin: 0 auto;
+    padding: 0 10px;
+    width: 350px;
+}
